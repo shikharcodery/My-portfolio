@@ -164,3 +164,39 @@ a:hover {
     text-decoration: underline; /* Optional, adds underline on hover */
     color: gold;
 }
+@media (max-width: 768px) {
+    .scrolling-text h1 {
+        font-size: 2rem;
+    }
+
+    .scrolling-text p {
+        font-size: 1rem;
+    }
+
+    .buttons li {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav .components ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-container {
+        height: 80vh;
+    }
+
+    .scrolling-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-overlay {
+        max-width: 90%;
+    }
+}
